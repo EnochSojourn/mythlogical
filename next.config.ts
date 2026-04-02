@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/mythlogical",
+  // basePath removed — serving from custom domain root (mythlogical.com)
   images: {
     unoptimized: true,
   },
