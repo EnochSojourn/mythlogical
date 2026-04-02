@@ -36,7 +36,7 @@ export default function Navbar() {
               <span className="text-white font-bold text-sm">M</span>
             </div>
             <span className="text-lg font-bold tracking-tight">
-              Myth<span className="gradient-text">ological</span>
+              Myth<span className="gradient-text">logical</span>
             </span>
           </a>
 

@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="text-white font-bold text-xs">M</span>
             </div>
             <span className="text-sm font-bold tracking-tight">
-              Myth<span className="gradient-text">ological</span>
+              Myth<span className="gradient-text">logical</span>
             </span>
           </div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
-          <p>&copy; {new Date().getFullYear()} Mythological. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mythlogical. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <a href="/privacy" className="hover:text-foreground transition-colors">
               Privacy Policy

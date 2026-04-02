@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mythological | AI Consulting That Delivers Results",
+  title: "Mythlogical | AI Consulting That Delivers Results",
   description:
     "We evaluate your business and implement targeted AI solutions that eliminate waste, accelerate operations, and deliver measurable ROI.",
   keywords: [
@@ -26,24 +26,24 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Mythological | AI Consulting That Delivers Results",
+    title: "Mythlogical | AI Consulting That Delivers Results",
     description:
       "We evaluate your business and implement targeted AI solutions that deliver measurable ROI.",
     url: "https://mythlogical.com",
-    siteName: "Mythological",
+    siteName: "Mythlogical",
     type: "website",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Mythological — We Find Your AI Savings. You Keep Most of Them.",
+        alt: "Mythlogical — We Find Your AI Savings. You Keep Most of Them.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mythological | AI Consulting That Delivers Results",
+    title: "Mythlogical | AI Consulting That Delivers Results",
     description:
       "We evaluate your business and implement targeted AI solutions that deliver measurable ROI.",
     images: ["/og.png"],
@@ -58,7 +58,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "Mythological",
+    name: "Mythlogical",
     url: "https://mythlogical.com",
     description:
       "AI consulting that delivers measurable results. We evaluate your business and implement targeted AI solutions that eliminate waste and accelerate operations.",

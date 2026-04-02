@@ -24,7 +24,7 @@ export default function Terms() {
               Overview
             </h2>
             <p>
-              Mythological (&ldquo;we,&rdquo; &ldquo;us,&rdquo;
+              Mythlogical (&ldquo;we,&rdquo; &ldquo;us,&rdquo;
               &ldquo;our&rdquo;) provides AI consulting services. By accessing
               our website at mythlogical.com, you agree to these terms.
             </p>
@@ -60,7 +60,7 @@ export default function Terms() {
             </h2>
             <p>
               All content on this site — including text, design, graphics, and
-              the Mythological name and logo — is our property or used with
+              the Mythlogical name and logo — is our property or used with
               permission. You may not reproduce or distribute it without
               written consent.
             </p>
