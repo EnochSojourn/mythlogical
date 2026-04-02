@@ -50,11 +50,11 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            We evaluate your business to determine exactly how much AI can save
-            you. Pay a small upfront fee, plus a percentage of your first-year
-            savings.{" "}
+            We evaluate your business to determine exactly where AI can
+            eliminate waste, accelerate operations, and unlock new
+            efficiencies.{" "}
             <span className="text-foreground font-medium">
-              If we don&apos;t find savings, you don&apos;t pay.
+              Real results, measurable from day one.
             </span>
           </motion.p>
 

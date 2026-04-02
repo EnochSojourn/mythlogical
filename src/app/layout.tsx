@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mythological | AI Consulting That Pays for Itself",
+  title: "Mythological | AI Consulting That Delivers Results",
   description:
-    "We evaluate your business, implement AI solutions, and you pay a fraction of what you save. Zero risk, maximum ROI.",
+    "We evaluate your business and implement targeted AI solutions that eliminate waste, accelerate operations, and deliver measurable ROI.",
   keywords: [
     "AI consulting",
     "AI automation",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Mythological | AI Consulting That Pays for Itself",
+    title: "Mythological | AI Consulting That Delivers Results",
     description:
-      "We evaluate your business, implement AI solutions, and you pay a fraction of what you save.",
+      "We evaluate your business and implement targeted AI solutions that deliver measurable ROI.",
     url: "https://mythlogical.com",
     siteName: "Mythological",
     type: "website",
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mythological | AI Consulting That Pays for Itself",
+    title: "Mythological | AI Consulting That Delivers Results",
     description:
-      "We evaluate your business, implement AI solutions, and you pay a fraction of what you save.",
+      "We evaluate your business and implement targeted AI solutions that deliver measurable ROI.",
     images: ["/og.png"],
   },
 };
@@ -61,7 +61,7 @@ export default function RootLayout({
     name: "Mythological",
     url: "https://mythlogical.com",
     description:
-      "AI consulting that pays for itself. We evaluate your business, implement AI solutions, and you pay a fraction of what you save.",
+      "AI consulting that delivers measurable results. We evaluate your business and implement targeted AI solutions that eliminate waste and accelerate operations.",
     email: "hello@mythlogical.com",
     serviceType: [
       "AI Consulting",

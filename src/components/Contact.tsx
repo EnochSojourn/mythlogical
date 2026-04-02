@@ -81,7 +81,7 @@ export default function Contact() {
                 "Free 30-minute discovery call",
                 "Custom savings estimate for your business",
                 "No commitment — walk away with actionable insights",
-                "Results-based pricing: you only pay from what you save",
+                "Proven methodology backed by real-world deployments",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <CheckCircle

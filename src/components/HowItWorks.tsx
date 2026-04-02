@@ -28,9 +28,9 @@ const steps = [
   {
     step: "04",
     icon: BadgeDollarSign,
-    title: "You Save. We Share.",
+    title: "Measure & Optimize",
     description:
-      "Once savings are verified and documented, you pay a small percentage of what you actually saved in year one. Your savings are real, audited, and yours to keep. We only win when you win — it's that simple.",
+      "We track every metric that matters — cost savings, time recovered, error reduction, throughput gains. You get a clear dashboard of results, and we continue optimizing to compound your returns over time.",
   },
 ];
 
@@ -47,40 +47,15 @@ export default function HowItWorks() {
             Our Model
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-            Zero Risk.{" "}
-            <span className="gradient-text">Maximum Return.</span>
+            From Assessment to{" "}
+            <span className="gradient-text">Measurable Impact.</span>
           </h2>
           <p className="text-muted text-lg">
-            Traditional consultants charge you whether they deliver results or
-            not. We tie our compensation directly to your savings. If we
-            don&apos;t perform, you don&apos;t pay.
+            A structured process that moves fast, integrates with your existing
+            stack, and delivers results you can measure — not promises you
+            can&apos;t.
           </p>
         </div>
-
-        {/* Pricing Highlight */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="gradient-border glow p-8 lg:p-12 text-center max-w-3xl mx-auto mb-20"
-        >
-          <p className="text-sm uppercase tracking-widest text-accent-cyan mb-4">
-            How Our Pricing Works
-          </p>
-          <p className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug mb-4">
-            Small upfront assessment fee
-            <br />
-            <span className="gradient-text text-3xl sm:text-4xl lg:text-5xl">
-              + a share of your verified savings
-            </span>
-          </p>
-          <p className="text-muted max-w-lg mx-auto">
-            The assessment fee covers our diagnostic costs. Everything else is
-            performance-based. You keep the majority of every dollar saved —
-            guaranteed in writing.
-          </p>
-        </motion.div>
 
         {/* Steps */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
