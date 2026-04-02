@@ -265,7 +265,7 @@ export default function Contact() {
 
                   <p className="text-xs text-center text-muted">
                     No spam. No sales pressure. Just a straightforward
-                    conversation about your potential savings.
+                    conversation about what AI can do for you.
                   </p>
                 </form>
               )}

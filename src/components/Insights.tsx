@@ -27,11 +27,11 @@ const articles = [
 
   },
   {
-    category: "Cost Analysis",
+    category: "Operations",
     date: "March 2026",
-    title: "The Hidden Cost of Manual IT Operations: $4.3M per Year for Mid-Market Companies",
+    title: "Mid-Market IT Teams Are Drowning in Manual Work — AI Is the Lifeline",
     excerpt:
-      "A new study reveals that mid-size enterprises (500-5,000 employees) waste an average of $4.3 million annually on manual processes that AI can automate today — from ticket routing to capacity planning to compliance reporting.",
+      "A new study reveals that mid-size enterprises (500-5,000 employees) lose thousands of engineering hours annually to manual processes that AI can handle today — from ticket routing to capacity planning to compliance reporting.",
     icon: Clock,
     accent: "text-amber-400",
     accentBg: "bg-amber-400/10",
@@ -41,7 +41,7 @@ const articles = [
 
 const urgencyStats = [
   { value: "67%", label: "of IT leaders say AI adoption is their #1 priority in 2026" },
-  { value: "$15.7T", label: "projected global AI economic impact by 2030" },
+  { value: "10x", label: "faster incident resolution with AI-augmented ops" },
   { value: "3x", label: "faster incident resolution with AI-powered IT ops" },
 ];
 
@@ -59,8 +59,8 @@ export default function Insights() {
             <span className="gradient-text">Won&apos;t Wait for You</span>
           </h2>
           <p className="text-muted text-lg">
-            Every week you delay costs your business real money. Here&apos;s
-            what&apos;s happening in the market right now.
+            The landscape is shifting fast. Here&apos;s what&apos;s happening
+            in the market right now.
           </p>
         </div>
 

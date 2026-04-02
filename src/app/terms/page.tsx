@@ -36,9 +36,9 @@ export default function Terms() {
             </h2>
             <p>
               Our website provides general information about our consulting
-              services. Specific service terms, deliverables, pricing, and
-              savings-share arrangements are defined in individual client
-              agreements and are not governed by these website terms.
+              services. Specific service terms, deliverables, and engagement
+              details are defined in individual client agreements and are not
+              governed by these website terms.
             </p>
           </section>
 
@@ -47,10 +47,10 @@ export default function Terms() {
               No Guarantees
             </h2>
             <p>
-              While we reference industry statistics and potential savings on
+              While we reference industry statistics and potential outcomes on
               this site, these are illustrative. Actual results vary by
-              organization. Specific savings projections are provided only
-              during formal assessments and are detailed in client agreements.
+              organization. Specific projections are provided only during
+              formal assessments and are detailed in client agreements.
             </p>
           </section>
 

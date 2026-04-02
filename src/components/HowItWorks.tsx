@@ -1,6 +1,6 @@
 "use client";
 
-import { Search, BarChart3, Rocket, BadgeDollarSign } from "lucide-react";
+import { Search, BarChart3, Rocket, LineChart } from "lucide-react";
 import { motion } from "framer-motion";
 
 const steps = [
@@ -9,14 +9,14 @@ const steps = [
     icon: Search,
     title: "Deep-Dive Assessment",
     description:
-      "We audit your IT operations, infrastructure costs, team workflows, and technology stack. Our AI diagnostic tools map every dollar you spend and every hour your team invests — identifying exactly where AI can create savings.",
+      "We audit your IT operations, team workflows, and technology stack. Our AI diagnostic tools map how your organization actually works — identifying exactly where AI can have the greatest impact.",
   },
   {
     step: "02",
     icon: BarChart3,
-    title: "Savings Blueprint",
+    title: "Strategic Roadmap",
     description:
-      "You receive a detailed report showing projected savings, implementation timelines, and expected ROI. No jargon, no guesswork — just hard numbers you can take to your board. This is where you decide if you want to move forward.",
+      "You receive a detailed report showing recommended AI initiatives, implementation timelines, and expected outcomes. No jargon, no guesswork — just a clear plan you can take to your team. This is where you decide if you want to move forward.",
   },
   {
     step: "03",
@@ -27,10 +27,10 @@ const steps = [
   },
   {
     step: "04",
-    icon: BadgeDollarSign,
+    icon: LineChart,
     title: "Measure & Optimize",
     description:
-      "We track every metric that matters — cost savings, time recovered, error reduction, throughput gains. You get a clear dashboard of results, and we continue optimizing to compound your returns over time.",
+      "We track every metric that matters — time recovered, error reduction, throughput gains, team velocity. You get a clear dashboard of results, and we continue optimizing to compound improvements over time.",
   },
 ];
 

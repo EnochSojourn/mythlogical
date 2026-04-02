@@ -8,14 +8,14 @@ const services = [
     icon: Bot,
     title: "Intelligent Process Automation",
     description:
-      "We identify and automate repetitive IT workflows — ticket routing, incident triage, patch management, and provisioning — using AI agents that learn from your team's patterns. Reduce manual toil by up to 60% while your engineers focus on architecture, not busywork.",
+      "We identify and automate repetitive IT workflows — ticket routing, incident triage, patch management, and provisioning — using AI agents that learn from your team's patterns. Your engineers get to focus on architecture, not busywork.",
     tags: ["AIOps", "RPA", "Workflow Orchestration"],
   },
   {
     icon: Network,
     title: "Predictive Infrastructure Optimization",
     description:
-      "Our AI models analyze your cloud spend, server utilization, and network traffic in real time. We predict capacity needs before they become emergencies, right-size your infrastructure, and eliminate the 30-40% of cloud spend most enterprises waste on idle resources.",
+      "Our AI models analyze your infrastructure utilization and network traffic in real time. We predict capacity needs before they become emergencies, right-size your resources, and ensure every machine is earning its keep.",
     tags: ["FinOps", "Capacity Planning", "Cloud Intelligence"],
   },
   {
@@ -61,12 +61,12 @@ export default function Services() {
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             AI Solutions That{" "}
-            <span className="gradient-text">Deliver Measurable ROI</span>
+            <span className="gradient-text">Move the Needle</span>
           </h2>
           <p className="text-muted text-lg">
             We don&apos;t sell vague &ldquo;AI transformation.&rdquo; We deploy
-            targeted solutions with quantifiable cost savings — and we stake our
-            fee on the results.
+            targeted solutions that solve real problems — with clear metrics so
+            you can see the impact.
           </p>
         </div>
 

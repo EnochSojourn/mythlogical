@@ -25,8 +25,8 @@ export default function Privacy() {
               When you submit our contact form, we collect your name, work
               email, company name, company size, and any additional details you
               choose to provide about your IT challenges. We use this
-              information solely to respond to your inquiry and assess potential
-              AI savings opportunities.
+              information solely to respond to your inquiry and assess
+              potential AI opportunities for your organization.
             </p>
           </section>
 
@@ -36,7 +36,7 @@ export default function Privacy() {
             </h2>
             <ul className="list-disc pl-6 space-y-2">
               <li>To respond to your inquiry and schedule discovery calls</li>
-              <li>To prepare savings assessments relevant to your business</li>
+              <li>To prepare AI assessments relevant to your business</li>
               <li>To communicate about our services if you engage with us</li>
             </ul>
             <p className="mt-3">

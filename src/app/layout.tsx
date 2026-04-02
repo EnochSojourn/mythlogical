@@ -11,12 +11,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Mythlogical | AI Consulting That Delivers Results",
   description:
-    "We evaluate your business and implement targeted AI solutions that eliminate waste, accelerate operations, and deliver measurable ROI.",
+    "We help forward-thinking organizations navigate AI — from strategy through execution. Clear roadmap. Real deployment. Measurable impact.",
   keywords: [
     "AI consulting",
     "AI automation",
     "IT infrastructure",
-    "cost savings",
+    "AI strategy",
     "artificial intelligence",
     "business optimization",
   ],
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mythlogical | AI Consulting That Delivers Results",
     description:
-      "We evaluate your business and implement targeted AI solutions that deliver measurable ROI.",
+      "We help forward-thinking organizations navigate AI — from strategy through execution.",
     url: "https://mythlogical.com",
     siteName: "Mythlogical",
     type: "website",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mythlogical | AI Consulting That Delivers Results",
     description:
-      "We evaluate your business and implement targeted AI solutions that deliver measurable ROI.",
+      "We help forward-thinking organizations navigate AI — from strategy through execution.",
     images: ["/og.png"],
   },
 };

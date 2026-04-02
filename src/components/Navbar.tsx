@@ -55,7 +55,7 @@ export default function Navbar() {
               href="#contact"
               className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-accent to-accent-cyan rounded-full hover:opacity-90 transition-opacity pulse-cta"
             >
-              Get Your Free Assessment
+              Book a Strategy Call
             </a>
           </div>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-accent to-accent-cyan rounded-full hover:opacity-90 transition-opacity mt-2"
               >
-                Get Your Free Assessment
+                Book a Strategy Call
               </a>
             </div>
           </div>
