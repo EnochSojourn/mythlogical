@@ -1,15 +1,50 @@
 "use client";
 
 import { useState } from "react";
-import { Send, Mail, ArrowRight, CheckCircle } from "lucide-react";
+import { Send, Mail, ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
+
+// FormSubmit.co — no account needed. First submission triggers a verification
+// email to this address. Click the link once, then all future submissions
+// are delivered automatically. Change this to your actual receiving email.
+const CONTACT_EMAIL = "hello@mythlogical.com";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData);
+
+    try {
+      const res = await fetch(
+        `https://formsubmit.co/ajax/${CONTACT_EMAIL}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please email us directly.");
+      }
+    } catch {
+      setError("Something went wrong. Please email us directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -63,10 +98,10 @@ export default function Contact() {
               <div>
                 <p className="text-xs text-muted mb-0.5">Email us directly</p>
                 <a
-                  href="mailto:hello@mythological.com"
+                  href="mailto:hello@mythlogical.com"
                   className="text-sm font-medium text-foreground hover:text-accent-cyan transition-colors"
                 >
-                  hello@mythological.com
+                  hello@mythlogical.com
                 </a>
               </div>
             </div>
@@ -95,6 +130,28 @@ export default function Contact() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
+                  {/* Honeypot — hidden from humans, catches bots */}
+                  <input
+                    type="text"
+                    name="_honey"
+                    style={{ display: "none" }}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                  {/* Disable FormSubmit's default captcha page */}
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New lead from mythlogical.com"
+                  />
+
+                  {error && (
+                    <div className="p-3 rounded-lg bg-red-500/10 border border-red-500/20 text-sm text-red-400">
+                      {error}
+                    </div>
+                  )}
+
                   <div>
                     <label
                       htmlFor="name"
@@ -186,14 +243,24 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-accent to-accent-cyan rounded-xl hover:opacity-90 transition-opacity group"
+                    disabled={loading}
+                    className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-accent to-accent-cyan rounded-xl hover:opacity-90 transition-opacity group disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    <Send size={18} />
-                    Get My Free Savings Estimate
-                    <ArrowRight
-                      size={16}
-                      className="group-hover:translate-x-1 transition-transform"
-                    />
+                    {loading ? (
+                      <>
+                        <Loader2 size={18} className="animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send size={18} />
+                        Get My Free Savings Estimate
+                        <ArrowRight
+                          size={16}
+                          className="group-hover:translate-x-1 transition-transform"
+                        />
+                      </>
+                    )}
                   </button>
 
                   <p className="text-xs text-center text-muted">

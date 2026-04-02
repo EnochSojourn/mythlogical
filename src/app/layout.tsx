@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Mythological | AI Consulting That Pays for Itself",
     description:
       "We evaluate your business, implement AI solutions, and you pay a fraction of what you save.",
-    url: "https://mythological.com",
+    url: "https://mythlogical.com",
     siteName: "Mythological",
     type: "website",
   },

@@ -47,10 +47,10 @@ export default function Footer() {
           <div className="flex items-center gap-2 text-sm text-muted">
             <Mail size={14} className="text-accent-cyan" />
             <a
-              href="mailto:hello@mythological.com"
+              href="mailto:hello@mythlogical.com"
               className="hover:text-foreground transition-colors"
             >
-              hello@mythological.com
+              hello@mythlogical.com
             </a>
           </div>
         </div>
@@ -58,10 +58,10 @@ export default function Footer() {
         <div className="mt-8 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
           <p>&copy; {new Date().getFullYear()} Mythological. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-foreground transition-colors">
+            <a href="/privacy" className="hover:text-foreground transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-foreground transition-colors">
+            <a href="/terms" className="hover:text-foreground transition-colors">
               Terms of Service
             </a>
           </div>

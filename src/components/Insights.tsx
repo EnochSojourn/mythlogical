@@ -1,6 +1,6 @@
 "use client";
 
-import { Clock, TrendingUp, AlertTriangle, ArrowUpRight } from "lucide-react";
+import { Clock, TrendingUp, AlertTriangle } from "lucide-react";
 import { motion } from "framer-motion";
 
 const articles = [
@@ -13,7 +13,7 @@ const articles = [
     icon: TrendingUp,
     accent: "text-green-400",
     accentBg: "bg-green-400/10",
-    link: "#",
+
   },
   {
     category: "Threat Advisory",
@@ -24,7 +24,7 @@ const articles = [
     icon: AlertTriangle,
     accent: "text-red-400",
     accentBg: "bg-red-400/10",
-    link: "#",
+
   },
   {
     category: "Cost Analysis",
@@ -35,7 +35,7 @@ const articles = [
     icon: Clock,
     accent: "text-amber-400",
     accentBg: "bg-amber-400/10",
-    link: "#",
+
   },
 ];
 
@@ -115,17 +115,9 @@ export default function Insights() {
                 {article.title}
               </h3>
 
-              <p className="text-sm text-muted leading-relaxed mb-6 flex-1">
+              <p className="text-sm text-muted leading-relaxed flex-1">
                 {article.excerpt}
               </p>
-
-              <a
-                href={article.link}
-                className="inline-flex items-center gap-1 text-sm font-medium text-accent-cyan hover:underline"
-              >
-                Read Analysis
-                <ArrowUpRight size={14} />
-              </a>
             </motion.article>
           ))}
         </div>
