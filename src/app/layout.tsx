@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Mythlogical — We Find Your AI Savings. You Keep Most of Them.",
+        alt: "Mythlogical — AI Changes Everything. We Show You Where to Start.",
       },
     ],
   },

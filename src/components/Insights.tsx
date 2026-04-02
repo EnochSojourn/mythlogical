@@ -138,7 +138,7 @@ export default function Insights() {
             href="#contact"
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-accent to-accent-cyan rounded-full hover:opacity-90 transition-opacity"
           >
-            Don&apos;t Get Left Behind — Talk to Us Today
+            Start Your AI Strategy Today
           </a>
         </motion.div>
       </div>

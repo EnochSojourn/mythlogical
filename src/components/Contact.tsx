@@ -65,21 +65,21 @@ export default function Contact() {
               Start Here
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
-              Find Out What AI
+              Ready to See What AI
               <br />
-              <span className="gradient-text">Can Save Your Business</span>
+              <span className="gradient-text">Can Do for Your Business?</span>
             </h2>
             <p className="text-muted text-lg leading-relaxed mb-8">
-              Book a free, no-obligation discovery call. In 30 minutes,
-              we&apos;ll identify the highest-impact AI opportunities in your IT
-              operations — and give you a ballpark savings estimate before you
-              commit to anything.
+              Book a free, no-obligation strategy call. In 30 minutes,
+              we&apos;ll map the highest-impact AI opportunities in your
+              operations and outline a clear path forward — no jargon, no
+              pressure.
             </p>
 
             <div className="space-y-4 mb-8">
               {[
-                "Free 30-minute discovery call",
-                "Custom savings estimate for your business",
+                "Free 30-minute strategy call",
+                "Clear roadmap tailored to your business",
                 "No commitment — walk away with actionable insights",
                 "Proven methodology backed by real-world deployments",
               ].map((item) => (
@@ -254,7 +254,7 @@ export default function Contact() {
                     ) : (
                       <>
                         <Send size={18} />
-                        Get My Free Savings Estimate
+                        Book My Strategy Call
                         <ArrowRight
                           size={16}
                           className="group-hover:translate-x-1 transition-transform"

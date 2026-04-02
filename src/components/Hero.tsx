@@ -4,9 +4,9 @@ import { ArrowRight, TrendingUp, Shield, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "40%", label: "Average Cost Reduction", icon: TrendingUp },
-  { value: "90 Days", label: "To Measurable ROI", icon: Zap },
-  { value: "0", label: "Risk to You", icon: Shield },
+  { value: "4x", label: "Operational Efficiency", icon: TrendingUp },
+  { value: "90 Days", label: "Strategy to Deployment", icon: Zap },
+  { value: "100%", label: "Tailored to Your Stack", icon: Shield },
 ];
 
 export default function Hero() {
@@ -38,9 +38,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
           >
-            We Find Your AI Savings.
+            AI Changes Everything.
             <br />
-            <span className="gradient-text">You Keep Most of Them.</span>
+            <span className="gradient-text">We Show You Where to Start.</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -50,11 +50,11 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            We evaluate your business to determine exactly where AI can
-            eliminate waste, accelerate operations, and unlock new
-            efficiencies.{" "}
+            We help forward-thinking organizations cut through the noise,
+            identify the highest-impact opportunities, and deploy AI solutions
+            that actually work —{" "}
             <span className="text-foreground font-medium">
-              Real results, measurable from day one.
+              from strategy through execution.
             </span>
           </motion.p>
 
@@ -69,7 +69,7 @@ export default function Hero() {
               href="#contact"
               className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-accent to-accent-cyan rounded-full hover:opacity-90 transition-all pulse-cta"
             >
-              Calculate My Savings
+              Book a Strategy Call
               <ArrowRight
                 size={18}
                 className="group-hover:translate-x-1 transition-transform"
