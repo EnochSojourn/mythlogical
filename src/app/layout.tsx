@@ -21,6 +21,10 @@ export const metadata: Metadata = {
     "business optimization",
   ],
   metadataBase: new URL("https://mythlogical.com"),
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Mythological | AI Consulting That Pays for Itself",
     description:
