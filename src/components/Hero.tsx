@@ -11,13 +11,15 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-pattern">
-      {/* Background gradient orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-cyan/5 rounded-full blur-3xl" />
-      <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-accent-violet/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+    <section className="relative min-h-screen flex items-center justify-center grid-pattern">
+      {/* Background gradient orbs — contained so they don't cause overflow */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-cyan/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-accent-violet/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-20">
+      <div className="relative w-full max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-20 min-w-0">
         <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
           <motion.div
@@ -36,11 +38,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
+            className="text-3xl leading-snug sm:text-5xl sm:leading-[1.1] lg:text-7xl font-bold tracking-tight mb-6"
           >
             AI Changes Everything.
             <br />
-            <span className="gradient-text">We Show You Where to Start.</span>
+            <span className="gradient-text">
+              We Show You Where to Start.
+            </span>
           </motion.h1>
 
           {/* Subheadline */}
