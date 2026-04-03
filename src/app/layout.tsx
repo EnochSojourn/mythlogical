@@ -9,7 +9,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mythlogical | AI Consulting That Delivers Results",
+  title: {
+    default: "Mythlogical | AI Consulting That Delivers Results",
+    template: "%s | Mythlogical",
+  },
   description:
     "We help forward-thinking organizations navigate AI — from strategy through execution. Clear roadmap. Real deployment. Measurable impact.",
   keywords: [
@@ -74,6 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} antialiased`}>
       <head>
+        <link rel="dns-prefetch" href="https://formsubmit.co" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

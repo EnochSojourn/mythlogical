@@ -16,31 +16,12 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-6 text-sm text-muted">
-            <a
-              href="#services"
-              className="hover:text-foreground transition-colors"
-            >
-              Services
-            </a>
-            <a
-              href="#how-it-works"
-              className="hover:text-foreground transition-colors"
-            >
-              How It Works
-            </a>
-            <a
-              href="#insights"
-              className="hover:text-foreground transition-colors"
-            >
-              Insights
-            </a>
-            <a
-              href="#contact"
-              className="hover:text-foreground transition-colors"
-            >
-              Contact
-            </a>
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted">
+            <a href="#services" className="hover:text-foreground transition-colors">Services</a>
+            <a href="#why-us" className="hover:text-foreground transition-colors">Why Us</a>
+            <a href="#how-it-works" className="hover:text-foreground transition-colors">How It Works</a>
+            <a href="#insights" className="hover:text-foreground transition-colors">Insights</a>
+            <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
           </div>
 
           {/* Contact */}

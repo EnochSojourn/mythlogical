@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Services", href: "#services" },
+  { label: "Why Us", href: "#why-us" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Insights", href: "#insights" },
   { label: "Contact", href: "#contact" },
@@ -31,7 +32,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
+          <a href="#" className="flex items-center gap-2 group" aria-label="Mythlogical — home">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-cyan flex items-center justify-center">
               <span className="text-white font-bold text-sm">M</span>
             </div>
@@ -64,6 +65,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden p-2 text-muted hover:text-foreground"
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -71,7 +73,7 @@ export default function Navbar() {
 
         {/* Mobile Nav */}
         {mobileOpen && (
-          <div className="md:hidden pb-6 border-t border-border mt-2 pt-4">
+          <div className="md:hidden pb-6 border-t border-border mt-2 pt-4" role="navigation" aria-label="Mobile navigation">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
