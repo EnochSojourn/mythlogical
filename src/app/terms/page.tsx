@@ -11,7 +11,7 @@ export default function Terms() {
       <div className="max-w-3xl mx-auto px-6 lg:px-8 py-32">
         <Link
           href="/"
-          className="text-sm text-accent-cyan hover:underline mb-8 block"
+          className="text-sm text-accent-green hover:underline mb-8 block"
         >
           &larr; Back to Home
         </Link>
@@ -19,9 +19,7 @@ export default function Terms() {
         <h1 className="text-3xl sm:text-4xl font-bold mb-8">
           Terms of Service
         </h1>
-        <p className="text-sm text-muted mb-12">
-          Last updated: April 2, 2026
-        </p>
+        <p className="text-sm text-muted mb-12">Last updated: April 4, 2026</p>
 
         <div className="space-y-8 text-muted leading-relaxed">
           <section>
@@ -30,32 +28,56 @@ export default function Terms() {
             </h2>
             <p>
               Mythlogical (&ldquo;we,&rdquo; &ldquo;us,&rdquo;
-              &ldquo;our&rdquo;) provides AI consulting services. By accessing
-              our website at mythlogical.com, you agree to these terms.
+              &ldquo;our&rdquo;) develops the MythNet network monitoring and
+              security platform. By accessing our website at mythlogical.com or
+              using the MythNet software, you agree to these terms.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-foreground mb-3">
-              Services
+              Authorized Use
             </h2>
             <p>
-              Our website provides general information about our consulting
-              services. Specific service terms, deliverables, and engagement
-              details are defined in individual client agreements and are not
-              governed by these website terms.
+              You may only use MythNet to monitor networks you own or have
+              explicit authorization to monitor. Unauthorized network scanning
+              or monitoring is prohibited and may violate applicable laws.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-foreground mb-3">
-              No Guarantees
+              Early Access Program
             </h2>
             <p>
-              While we reference industry statistics and potential outcomes on
-              this site, these are illustrative. Actual results vary by
-              organization. Specific projections are provided only during
-              formal assessments and are detailed in client agreements.
+              The early access program provides pre-release software that may
+              contain bugs or incomplete features. Early access software is
+              provided as-is without warranty. We may modify, suspend, or
+              discontinue early access at any time.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-foreground mb-3">
+              Your Responsibilities
+            </h2>
+            <p>
+              You are responsible for ensuring your use of MythNet complies with
+              all applicable laws and regulations, including those governing
+              network monitoring, data collection, and cybersecurity in your
+              jurisdiction.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-foreground mb-3">
+              Limitation of Liability
+            </h2>
+            <p>
+              MythNet is provided as a monitoring and analysis tool. We are not
+              liable for security breaches, data loss, or network disruptions
+              that occur on your infrastructure. The software augments — but
+              does not replace — professional security practices.
             </p>
           </section>
 
@@ -65,31 +87,9 @@ export default function Terms() {
             </h2>
             <p>
               All content on this site — including text, design, graphics, and
-              the Mythlogical name and logo — is our property or used with
-              permission. You may not reproduce or distribute it without
-              written consent.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold text-foreground mb-3">
-              Limitation of Liability
-            </h2>
-            <p>
-              This website is provided &ldquo;as is.&rdquo; We are not liable
-              for any damages arising from your use of this site or reliance
-              on information presented here. Our liability for consulting
-              services is governed by individual client agreements.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold text-foreground mb-3">
-              Changes
-            </h2>
-            <p>
-              We may update these terms at any time. Continued use of the site
-              after changes constitutes acceptance.
+              the Mythlogical and MythNet names — is our property or used with
+              permission. You may not reproduce or distribute it without written
+              consent.
             </p>
           </section>
 
@@ -101,7 +101,7 @@ export default function Terms() {
               Questions? Email{" "}
               <a
                 href="mailto:hello@mythlogical.com"
-                className="text-accent-cyan hover:underline"
+                className="text-accent-green hover:underline"
               >
                 hello@mythlogical.com
               </a>
