@@ -2,73 +2,18 @@
 
 import { motion } from "framer-motion";
 import {
-  Radar,
+  Map,
   Brain,
-  Network,
   Shield,
+  Radar,
+  Network,
   Settings,
   FileText,
   Radio,
-  Map,
+  TerminalSquare,
 } from "lucide-react";
 
 const features = [
-  {
-    icon: Radar,
-    title: "Autonomous Discovery",
-    description:
-      "TCP ping sweeps, ARP lookups, mDNS, SSDP, and NetBIOS probing across 300+ ports. Auto-detects subnets, fingerprints OS, classifies device types, and resolves vendors from a built-in OUI database.",
-    color: "text-accent-cyan",
-    bg: "bg-accent-cyan/10",
-  },
-  {
-    icon: Brain,
-    title: "Active AI Analysis",
-    description:
-      "Claude-powered analysis runs continuously after every scan cycle. Chat with the AI directly from the UI to ask about threats, device health, or network state. Generates scheduled reports automatically.",
-    color: "text-accent-green",
-    bg: "bg-accent-green/10",
-  },
-  {
-    icon: Network,
-    title: "Mesh Intelligence",
-    description:
-      "Instances discover each other via gossip protocol and replicate through mTLS-encrypted channels. Full nodes hold complete databases. Sensor nodes push data upstream. The mesh self-heals.",
-    color: "text-accent",
-    bg: "bg-accent/10",
-  },
-  {
-    icon: Shield,
-    title: "Built-In Security Scanning",
-    description:
-      "18 CVE detection rules, HTTP header audits, TLS cipher analysis, certificate expiration monitoring, and dangerous port flagging — all running out of the box with zero configuration.",
-    color: "text-accent-violet",
-    bg: "bg-accent-violet/10",
-  },
-  {
-    icon: Settings,
-    title: "Remote Network Tools",
-    description:
-      "Ping, DNS lookup, port check, traceroute, WHOIS, SNMP walk, Wake-on-LAN, and subnet calculator — all accessible from the web UI or the mythctl CLI client.",
-    color: "text-accent-amber",
-    bg: "bg-accent-amber/10",
-  },
-  {
-    icon: FileText,
-    title: "Standardized Ingestion",
-    description:
-      "All device data is normalized into Markdown format before storage. SNMP traps, syslog messages, and HTTP API responses are all translated into a clean, searchable, consistent format.",
-    color: "text-accent-cyan",
-    bg: "bg-accent-cyan/10",
-  },
-  {
-    icon: Radio,
-    title: "Deep Telemetry",
-    description:
-      "SNMP trap and poll listener, RFC 3164 syslog receiver, and HTTP API poller with automatic status change deduplication. Proactively listens for every signal your devices emit.",
-    color: "text-accent-green",
-    bg: "bg-accent-green/10",
-  },
   {
     icon: Map,
     title: "Live Network Map",
@@ -76,6 +21,70 @@ const features = [
       "D3.js force-directed topology with real-time WebSocket updates. Click any node to drill into ports, banners, uptime, latency history, CVEs, and device notes. Export as SVG.",
     color: "text-accent",
     bg: "bg-accent/10",
+  },
+  {
+    icon: Brain,
+    title: "Active AI Analysis",
+    description:
+      "Claude-powered analysis runs continuously after every scan cycle. Chat with the AI directly from the UI to ask about threats, device health, or network state.",
+    color: "text-accent-green",
+    bg: "bg-accent-green/10",
+  },
+  {
+    icon: Shield,
+    title: "Security Scanning",
+    description:
+      "18 CVE detection rules, HTTP header audits, TLS cipher analysis, certificate expiration monitoring, and dangerous port flagging — all running out of the box.",
+    color: "text-accent-violet",
+    bg: "bg-accent-violet/10",
+  },
+  {
+    icon: Radar,
+    title: "Autonomous Discovery",
+    description:
+      "TCP ping sweeps, ARP lookups, mDNS, SSDP, and NetBIOS probing across 300+ ports. Auto-detects subnets, fingerprints OS, classifies device types from a built-in OUI database.",
+    color: "text-accent-cyan",
+    bg: "bg-accent-cyan/10",
+  },
+  {
+    icon: Network,
+    title: "Mesh Intelligence",
+    description:
+      "Instances discover each other via gossip protocol and replicate through mTLS-encrypted channels. Full nodes hold complete databases. Sensor nodes push data upstream.",
+    color: "text-accent",
+    bg: "bg-accent/10",
+  },
+  {
+    icon: Radio,
+    title: "Deep Telemetry",
+    description:
+      "SNMP trap and poll listener, RFC 3164 syslog receiver, and HTTP API poller with automatic status change deduplication. Listens for every signal your devices emit.",
+    color: "text-accent-green",
+    bg: "bg-accent-green/10",
+  },
+  {
+    icon: Settings,
+    title: "Network Tools",
+    description:
+      "Ping, DNS lookup, port check, traceroute, WHOIS, SNMP walk, Wake-on-LAN, and subnet calculator — all from the web UI or the mythctl CLI client.",
+    color: "text-accent-amber",
+    bg: "bg-accent-amber/10",
+  },
+  {
+    icon: FileText,
+    title: "Standardized Ingestion",
+    description:
+      "All device data is normalized into Markdown format before storage. SNMP traps, syslog messages, and HTTP API responses are translated into a clean, searchable format.",
+    color: "text-accent-cyan",
+    bg: "bg-accent-cyan/10",
+  },
+  {
+    icon: TerminalSquare,
+    title: "mythctl CLI",
+    description:
+      "A standalone 6MB CLI client with 13 commands. Manage devices, trigger scans, query AI, and export data from any terminal. Pipe-friendly JSON output.",
+    color: "text-accent-amber",
+    bg: "bg-accent-amber/10",
   },
 ];
 
@@ -103,7 +112,7 @@ export default function Features() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}

@@ -68,9 +68,11 @@ export default function RootLayout({
     name: "MythNet",
     applicationCategory: "NetworkApplication",
     operatingSystem: "Linux, macOS, Windows",
+    softwareVersion: "2.5.0",
     description:
       "AI-powered network monitoring and security platform. Autonomous discovery, mesh networking, vulnerability scanning, and Claude AI analysis in a single 15MB binary.",
     url: "https://mythlogical.com",
+    downloadUrl: "https://github.com/EnochSojourn/mythnet/releases",
     creator: {
       "@type": "Organization",
       name: "Mythlogical",
@@ -78,14 +80,13 @@ export default function RootLayout({
     },
     offers: {
       "@type": "Offer",
-      availability: "https://schema.org/PreOrder",
+      availability: "https://schema.org/InStock",
     },
   };
 
   return (
     <html lang="en" className={`${inter.variable} antialiased`}>
       <head>
-        <link rel="dns-prefetch" href="https://formsubmit.co" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

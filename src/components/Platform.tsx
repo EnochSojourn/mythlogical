@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Monitor, Laptop, Terminal, Cpu, Database, Wifi } from "lucide-react";
+import { Monitor, Laptop, Terminal, Cpu, Database, Wifi, Box } from "lucide-react";
 
 const platforms = [
   { icon: Terminal, label: "Linux", sub: "amd64 / arm64 / armv7" },
   { icon: Laptop, label: "macOS", sub: "Intel / Apple Silicon" },
   { icon: Monitor, label: "Windows", sub: "x86_64" },
   { icon: Cpu, label: "Raspberry Pi", sub: "ARMv7 / ARM64" },
+  { icon: Box, label: "Docker", sub: "OCI / docker-compose" },
 ];
 
 const meshModes = [
@@ -51,8 +52,7 @@ export default function Platform() {
           </p>
         </motion.div>
 
-        {/* Platform grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
           {platforms.map((p, i) => (
             <motion.div
               key={p.label}
@@ -69,7 +69,6 @@ export default function Platform() {
           ))}
         </div>
 
-        {/* Mesh modes */}
         <div className="grid md:grid-cols-2 gap-8">
           {meshModes.map((mode, i) => (
             <motion.div
@@ -87,7 +86,6 @@ export default function Platform() {
           ))}
         </div>
 
-        {/* Tech summary */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -104,6 +102,8 @@ export default function Platform() {
             <span>HashiCorp Memberlist</span>
             <span className="text-border">|</span>
             <span>Claude AI</span>
+            <span className="text-border">|</span>
+            <span>Docker + systemd</span>
             <span className="text-border">|</span>
             <span>51+ API Endpoints</span>
           </div>

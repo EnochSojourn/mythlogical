@@ -1,6 +1,14 @@
 "use client";
 
-import { ArrowRight, Radar, Network, Shield } from "lucide-react";
+import { ArrowRight, Download, Shield, Radar, Network } from "lucide-react";
+
+function GithubIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+    </svg>
+  );
+}
 import { motion } from "framer-motion";
 import NetworkGraph from "./NetworkGraph";
 
@@ -25,10 +33,15 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 text-xs font-medium text-accent-green border border-accent-green/20 rounded-full bg-accent-green/5 mb-8">
+            <a
+              href="https://github.com/EnochSojourn/mythnet/releases/latest"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-1.5 text-xs font-medium text-accent-green border border-accent-green/20 rounded-full bg-accent-green/5 mb-8 hover:bg-accent-green/10 transition-colors"
+            >
               <span className="w-1.5 h-1.5 bg-accent-green rounded-full animate-pulse" />
-              v3.3 — Now with Anomaly Detection &amp; Playbooks
-            </span>
+              v2.5.0 — Open Source on GitHub
+            </a>
 
             <h1 className="text-3xl leading-snug sm:text-5xl sm:leading-[1.1] lg:text-6xl font-bold tracking-tight mb-6">
               AI-Native{" "}
@@ -46,20 +59,26 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a
-                href="#early-access"
+                href="https://github.com/EnochSojourn/mythnet/releases/latest"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-background bg-accent-green rounded-lg hover:bg-accent-green/90 transition-all pulse-cta"
               >
-                Request Early Access
+                <Download size={18} />
+                Download v2.5.0
                 <ArrowRight
                   size={18}
                   className="group-hover:translate-x-1 transition-transform"
                 />
               </a>
               <a
-                href="#features"
+                href="https://github.com/EnochSojourn/mythnet"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-medium text-muted border border-border rounded-lg hover:text-foreground hover:border-foreground/20 transition-all"
               >
-                See Capabilities
+                <GithubIcon className="w-[18px] h-[18px]" />
+                View on GitHub
               </a>
             </div>
 
@@ -84,9 +103,33 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden lg:block"
+            className="hidden lg:flex flex-col gap-4"
           >
             <NetworkGraph />
+
+            <div className="bg-[#0d1117] border border-border rounded-xl overflow-hidden">
+              <div className="flex items-center gap-2 px-4 py-2.5 border-b border-border">
+                <div className="w-2.5 h-2.5 rounded-full bg-accent-red" />
+                <div className="w-2.5 h-2.5 rounded-full bg-accent-amber" />
+                <div className="w-2.5 h-2.5 rounded-full bg-accent-green" />
+                <span className="text-xs text-muted font-mono ml-2">Terminal</span>
+              </div>
+              <div className="p-4 font-mono text-sm leading-relaxed">
+                <div>
+                  <span className="text-accent-green">$</span>{" "}
+                  <span className="text-muted">chmod +x mythnet && ./mythnet</span>
+                </div>
+                <div className="text-accent-cyan mt-1">
+                  MythNet v2.5.0 starting on :8080
+                </div>
+                <div className="text-accent-cyan">
+                  Discovered 47 devices on 192.168.1.0/24
+                </div>
+                <div className="text-accent-green mt-1">
+                  Health score: 87/100 (B+)
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
