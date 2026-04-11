@@ -39,7 +39,11 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <a href="#" className="flex items-center gap-2" aria-label="MythNet — home">
+          <a
+            href="#"
+            className="flex items-center gap-2"
+            aria-label="MythNet — home"
+          >
             <Shield className="w-6 h-6 text-accent-green" />
             <span className="text-lg font-bold tracking-tight">
               Myth<span className="gradient-text">Net</span>

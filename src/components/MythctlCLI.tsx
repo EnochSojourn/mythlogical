@@ -19,8 +19,14 @@ const commands = [
 const terminalLines = [
   { prompt: true, text: "mythctl devices --format table" },
   { prompt: false, text: "ID   HOSTNAME       IP             STATUS   PORTS" },
-  { prompt: false, text: "1    gateway        192.168.1.1    up       22,80,443" },
-  { prompt: false, text: "2    nas-primary    192.168.1.10   up       22,80,5001,9090" },
+  {
+    prompt: false,
+    text: "1    gateway        192.168.1.1    up       22,80,443",
+  },
+  {
+    prompt: false,
+    text: "2    nas-primary    192.168.1.10   up       22,80,5001,9090",
+  },
   { prompt: false, text: "3    cam-front      192.168.1.30   up       80,554" },
   { prompt: false, text: "47 devices found" },
   { prompt: false, text: "" },

@@ -1,7 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Monitor, Laptop, Terminal, Cpu, Database, Wifi, Box } from "lucide-react";
+import {
+  Monitor,
+  Laptop,
+  Terminal,
+  Cpu,
+  Database,
+  Wifi,
+  Box,
+} from "lucide-react";
 
 const platforms = [
   { icon: Terminal, label: "Linux", sub: "amd64 / arm64 / armv7" },

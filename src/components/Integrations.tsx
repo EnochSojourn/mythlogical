@@ -78,8 +78,7 @@ export default function Integrations() {
             Integrations
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-            Plugs Into{" "}
-            <span className="gradient-text">Your Stack</span>
+            Plugs Into <span className="gradient-text">Your Stack</span>
           </h2>
           <p className="text-muted text-lg">
             Export metrics, send alerts, and feed data to the tools you already

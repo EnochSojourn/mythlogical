@@ -23,8 +23,7 @@ export default function CTA() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-            Ready to See{" "}
-            <span className="gradient-text">Your Network</span>?
+            Ready to See <span className="gradient-text">Your Network</span>?
           </h2>
           <p className="text-muted text-lg mb-10 max-w-xl mx-auto">
             Download MythNet, run it, and have full network visibility in under

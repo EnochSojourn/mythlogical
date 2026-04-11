@@ -86,7 +86,10 @@ export default function QuickStart() {
                 {tabs.map((tab, i) => (
                   <button
                     key={tab.label}
-                    onClick={() => { setActiveTab(i); setCopied(false); }}
+                    onClick={() => {
+                      setActiveTab(i);
+                      setCopied(false);
+                    }}
                     className={`px-4 py-2.5 text-sm font-medium transition-colors ${
                       activeTab === i
                         ? "text-foreground border-b-2 border-accent-green"

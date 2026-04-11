@@ -28,11 +28,20 @@ const NODES: Node[] = [
 ];
 
 const EDGES: [number, number][] = [
-  [0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [0, 6],
-  [1, 7], [1, 8], [1, 11],
-  [2, 9], [2, 12],
+  [0, 1],
+  [0, 2],
+  [0, 3],
+  [0, 4],
+  [0, 5],
+  [0, 6],
+  [1, 7],
+  [1, 8],
+  [1, 11],
+  [2, 9],
+  [2, 12],
   [3, 7],
-  [4, 9], [4, 10],
+  [4, 9],
+  [4, 10],
   [5, 6],
 ];
 
@@ -86,8 +95,12 @@ export default function NetworkGraph() {
 
         // Glow
         const gradient = ctx.createRadialGradient(
-          node.x, node.y, 0,
-          node.x, node.y, node.radius * 3
+          node.x,
+          node.y,
+          0,
+          node.x,
+          node.y,
+          node.radius * 3,
         );
         gradient.addColorStop(0, node.color + "40");
         gradient.addColorStop(1, node.color + "00");

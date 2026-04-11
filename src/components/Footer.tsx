@@ -13,7 +13,10 @@ const links = [
   { label: "Architecture", href: "#architecture" },
   { label: "CLI", href: "#mythctl" },
   { label: "Integrations", href: "#integrations" },
-  { label: "Download", href: "https://github.com/EnochSojourn/mythnet/releases/latest" },
+  {
+    label: "Download",
+    href: "https://github.com/EnochSojourn/mythnet/releases/latest",
+  },
 ];
 
 export default function Footer() {
@@ -36,7 +39,9 @@ export default function Footer() {
                 key={link.href}
                 href={link.href}
                 className="hover:text-foreground transition-colors"
-                {...(link.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                {...(link.href.startsWith("http")
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
               >
                 {link.label}
               </a>

@@ -92,7 +92,9 @@ export default function Hero() {
                   className="text-center sm:text-left"
                 >
                   <stat.icon className="w-5 h-5 text-accent-cyan mb-2 mx-auto sm:mx-0" />
-                  <div className="text-lg font-bold gradient-text">{stat.value}</div>
+                  <div className="text-lg font-bold gradient-text">
+                    {stat.value}
+                  </div>
                   <div className="text-xs text-muted">{stat.label}</div>
                 </motion.div>
               ))}
@@ -112,12 +114,16 @@ export default function Hero() {
                 <div className="w-2.5 h-2.5 rounded-full bg-accent-red" />
                 <div className="w-2.5 h-2.5 rounded-full bg-accent-amber" />
                 <div className="w-2.5 h-2.5 rounded-full bg-accent-green" />
-                <span className="text-xs text-muted font-mono ml-2">Terminal</span>
+                <span className="text-xs text-muted font-mono ml-2">
+                  Terminal
+                </span>
               </div>
               <div className="p-4 font-mono text-sm leading-relaxed">
                 <div>
                   <span className="text-accent-green">$</span>{" "}
-                  <span className="text-muted">chmod +x mythnet && ./mythnet</span>
+                  <span className="text-muted">
+                    chmod +x mythnet && ./mythnet
+                  </span>
                 </div>
                 <div className="text-accent-cyan mt-1">
                   MythNet v2.5.0 starting on :8080

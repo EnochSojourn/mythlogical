@@ -12,9 +12,7 @@ export default function NotFound() {
         <span className="text-8xl font-black gradient-text block mb-4">
           404
         </span>
-        <h1 className="text-2xl sm:text-3xl font-bold mb-4">
-          Node Not Found
-        </h1>
+        <h1 className="text-2xl sm:text-3xl font-bold mb-4">Node Not Found</h1>
         <p className="text-muted mb-8 max-w-md mx-auto">
           This endpoint doesn&apos;t exist on the network.
         </p>

@@ -3,14 +3,42 @@
 import { motion } from "framer-motion";
 
 const modules = [
-  { label: "Go 1.24 Scanner Engine", color: "border-accent-cyan/30", dot: "bg-accent-cyan" },
-  { label: "SvelteKit + D3.js Web UI", color: "border-accent-green/30", dot: "bg-accent-green" },
+  {
+    label: "Go 1.24 Scanner Engine",
+    color: "border-accent-cyan/30",
+    dot: "bg-accent-cyan",
+  },
+  {
+    label: "SvelteKit + D3.js Web UI",
+    color: "border-accent-green/30",
+    dot: "bg-accent-green",
+  },
   { label: "SQLite WAL Database", color: "border-accent/30", dot: "bg-accent" },
-  { label: "Claude AI Integration", color: "border-accent-violet/30", dot: "bg-accent-violet" },
-  { label: "Memberlist Gossip Mesh", color: "border-accent-amber/30", dot: "bg-accent-amber" },
-  { label: "Prometheus Metrics", color: "border-accent-cyan/30", dot: "bg-accent-cyan" },
-  { label: "SNMP / Syslog / HTTP Pollers", color: "border-accent-green/30", dot: "bg-accent-green" },
-  { label: "mTLS Certificate Manager", color: "border-accent/30", dot: "bg-accent" },
+  {
+    label: "Claude AI Integration",
+    color: "border-accent-violet/30",
+    dot: "bg-accent-violet",
+  },
+  {
+    label: "Memberlist Gossip Mesh",
+    color: "border-accent-amber/30",
+    dot: "bg-accent-amber",
+  },
+  {
+    label: "Prometheus Metrics",
+    color: "border-accent-cyan/30",
+    dot: "bg-accent-cyan",
+  },
+  {
+    label: "SNMP / Syslog / HTTP Pollers",
+    color: "border-accent-green/30",
+    dot: "bg-accent-green",
+  },
+  {
+    label: "mTLS Certificate Manager",
+    color: "border-accent/30",
+    dot: "bg-accent",
+  },
 ];
 
 const stats = [
